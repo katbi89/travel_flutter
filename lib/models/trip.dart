@@ -15,7 +15,7 @@ class Trip {
   final TripType tripType;
   final bool isInSummer;
   final bool isInWinter;
-  final bool isForFamily;
+  final bool isForFamilies;
 
   const Trip({
     @required this.id,
@@ -29,6 +29,6 @@ class Trip {
     @required this.tripType,
     @required this.isInSummer,
     @required this.isInWinter,
-    @required this.isForFamily,
+    @required this.isForFamilies,
   });
 }
