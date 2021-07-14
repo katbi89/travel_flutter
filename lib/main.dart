@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:working/screens/categories_screen.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:working/screens/categories_trips_screen.dart';
+import 'package:working/screens/trip_detail_screen.dart';
 
 void main() {
   runApp(MyApp());
@@ -32,7 +33,7 @@ class MyApp extends StatelessWidget {
                 fontWeight: FontWeight.bold,
               ),
               headline6: TextStyle(
-                color: Colors.blue,
+                color: Colors.white,
                 fontFamily: 'ElMessiri',
                 fontSize: 26,
                 fontWeight: FontWeight.bold,
@@ -44,6 +45,7 @@ class MyApp extends StatelessWidget {
       routes: {
         '/': (context) => CategoriesScreen(),
         CategoryTripsScreen.screenRoute: (context) => CategoryTripsScreen(),
+        TripDetailScreen.screenRoute: (context) => TripDetailScreen(),
       },
     );
   }

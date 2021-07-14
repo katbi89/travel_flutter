@@ -66,16 +66,16 @@ flutter:
   fonts:
     - family: ElMessiri
       fonts:
-        - asset: fonts/Elmessiri-Regular.ttf
-        - asset: fonts/Elmessiri-SemiBold.ttf
+        - asset: assets/fonts/ElMessiri-Regular.ttf
+        - asset: assets/fonts/ElMessiri-SemiBold.ttf
           weight: 600
-        - asset: fonts/Elmessiri-Bold.ttf
+        - asset: assets/fonts/ElMessiri-Bold.ttf
           weight: 700
 
     - family: Amiri
       fonts:
-        - asset: fonts/Amiri-Regular.ttf
-        - asset: fonts/Amiri-Bold.ttf
+        - asset: assets/fonts/Amiri-Regular.ttf
+        - asset: assets/fonts/Amiri-Bold.ttf
           weight: 700
   #   - family: Trajan Pro
   #     fonts:
