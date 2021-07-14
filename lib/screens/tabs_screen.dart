@@ -18,20 +18,21 @@ class _TabsScreenState extends State<TabsScreen> {
 
   int _selectedScreenIndex = 0;
 
-  final List<Widget> _screens = [
-    CategoriesScreen(),
-    FavoritesScreen(),
+  final List<Map<String, Object>> _screens = [
+    {'Screen': CategoriesScreen(), 'Title': 'الرحلات المفضلة'},
+    {
+      'Screen': FavoritesScreen(),
+      'Title': 'الرحلات المفضلة',
+    }
   ];
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(
-          'دليل سياحي',
-        ),
+        title: Text(_screens[_selectedScreenIndex]['Title']),
       ),
-      body: _screens[_selectedScreenIndex],
+      body: _screens[_selectedScreenIndex]['Screen'],
       bottomNavigationBar: BottomNavigationBar(
         onTap: _selectScreen,
         backgroundColor: Theme.of(context).primaryColor,
