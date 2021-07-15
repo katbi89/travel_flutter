@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:working/screens/categories_screen.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:working/screens/categories_trips_screen.dart';
 import 'package:working/screens/filters_screen.dart';
