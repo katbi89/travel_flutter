@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:working/widgets/trip_item.dart';
-import 'package:working/app_data.dart';
+import '../widgets/trip_item.dart';
+import '../app_data.dart';
 
 class CategoryTripsScreen extends StatelessWidget {
   static const screenRoute = '/category-trips';
