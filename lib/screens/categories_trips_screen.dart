@@ -6,6 +6,10 @@ import '../app_data.dart';
 class CategoryTripsScreen extends StatefulWidget {
   static const screenRoute = '/category-trips';
 
+  final List<Trip> availableTrips;
+
+  CategoryTripsScreen(this.availableTrips);
+
   @override
   _CategoryTripsScreenState createState() => _CategoryTripsScreenState();
 }
@@ -26,7 +30,7 @@ class _CategoryTripsScreenState extends State<CategoryTripsScreen> {
 
     final categoryId = routeArgument['id'];
     categoryTitle = routeArgument['title'];
-    filteredTrips = Trips_data.where((trip) {
+    filteredTrips = widget.availableTrips.where((trip) {
       return trip.categories.contains(categoryId);
     }).toList();
     super.didChangeDependencies();
